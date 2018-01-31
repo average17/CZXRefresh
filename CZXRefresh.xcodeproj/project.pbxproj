@@ -8,12 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		7D46672020218F8F00B3473B /* CZXRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D46671E20218F8F00B3473B /* CZXRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D46672D20218FB100B3473B /* CustomRefreshDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46672720218FB100B3473B /* CustomRefreshDelegate.swift */; };
+		7D46672E20218FB100B3473B /* RefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46672820218FB100B3473B /* RefreshFooterView.swift */; };
+		7D46672F20218FB100B3473B /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46672920218FB100B3473B /* UIScrollView+Refresh.swift */; };
+		7D46673020218FB100B3473B /* RefreshConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46672A20218FB100B3473B /* RefreshConfigure.swift */; };
+		7D46673120218FB100B3473B /* CZXRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7D46672B20218FB100B3473B /* CZXRefresh.bundle */; };
+		7D46673220218FB100B3473B /* RefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46672C20218FB100B3473B /* RefreshHeaderView.swift */; };
+		7D466766202194B600B3473B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D466765202194B600B3473B /* AppDelegate.swift */; };
+		7D466768202194B600B3473B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D466767202194B600B3473B /* ViewController.swift */; };
+		7D46676B202194B600B3473B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D466769202194B600B3473B /* Main.storyboard */; };
+		7D46676D202194B600B3473B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D46676C202194B600B3473B /* Assets.xcassets */; };
+		7D466770202194B600B3473B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D46676E202194B600B3473B /* LaunchScreen.storyboard */; };
+		7D4667762021956B00B3473B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4667752021956B00B3473B /* Person.swift */; };
+		7D4667AF2021A37400B3473B /* CZXRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D46671B20218F8F00B3473B /* CZXRefresh.framework */; };
+		7D4667B02021A37400B3473B /* CZXRefresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D46671B20218F8F00B3473B /* CZXRefresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D4667B12021A37400B3473B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D46671220218F8F00B3473B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D46671A20218F8F00B3473B;
+			remoteInfo = CZXRefresh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7D4667B32021A37400B3473B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7D4667B02021A37400B3473B /* CZXRefresh.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7D46671B20218F8F00B3473B /* CZXRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZXRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D46671E20218F8F00B3473B /* CZXRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZXRefresh.h; sourceTree = "<group>"; };
 		7D46671F20218F8F00B3473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D46672720218FB100B3473B /* CustomRefreshDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRefreshDelegate.swift; sourceTree = "<group>"; };
+		7D46672820218FB100B3473B /* RefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshFooterView.swift; sourceTree = "<group>"; };
+		7D46672920218FB100B3473B /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
+		7D46672A20218FB100B3473B /* RefreshConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshConfigure.swift; sourceTree = "<group>"; };
+		7D46672B20218FB100B3473B /* CZXRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CZXRefresh.bundle; sourceTree = "<group>"; };
+		7D46672C20218FB100B3473B /* RefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeaderView.swift; sourceTree = "<group>"; };
+		7D466763202194B600B3473B /* CZXRefreshExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZXRefreshExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D466765202194B600B3473B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D466767202194B600B3473B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D46676A202194B600B3473B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D46676C202194B600B3473B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D46676F202194B600B3473B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D466771202194B600B3473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4667752021956B00B3473B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +76,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D466760202194B600B3473B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4667AF2021A37400B3473B /* CZXRefresh.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				7D46671D20218F8F00B3473B /* CZXRefresh */,
+				7D466764202194B600B3473B /* CZXRefreshExample */,
 				7D46671C20218F8F00B3473B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7D46671B20218F8F00B3473B /* CZXRefresh.framework */,
+				7D466763202194B600B3473B /* CZXRefreshExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +108,38 @@
 		7D46671D20218F8F00B3473B /* CZXRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				7D46672620218FB100B3473B /* Refresh */,
 				7D46671E20218F8F00B3473B /* CZXRefresh.h */,
 				7D46671F20218F8F00B3473B /* Info.plist */,
+				7D4667752021956B00B3473B /* Person.swift */,
 			);
 			path = CZXRefresh;
+			sourceTree = "<group>";
+		};
+		7D46672620218FB100B3473B /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				7D46672720218FB100B3473B /* CustomRefreshDelegate.swift */,
+				7D46672820218FB100B3473B /* RefreshFooterView.swift */,
+				7D46672920218FB100B3473B /* UIScrollView+Refresh.swift */,
+				7D46672A20218FB100B3473B /* RefreshConfigure.swift */,
+				7D46672B20218FB100B3473B /* CZXRefresh.bundle */,
+				7D46672C20218FB100B3473B /* RefreshHeaderView.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		7D466764202194B600B3473B /* CZXRefreshExample */ = {
+			isa = PBXGroup;
+			children = (
+				7D466765202194B600B3473B /* AppDelegate.swift */,
+				7D466767202194B600B3473B /* ViewController.swift */,
+				7D466769202194B600B3473B /* Main.storyboard */,
+				7D46676C202194B600B3473B /* Assets.xcassets */,
+				7D46676E202194B600B3473B /* LaunchScreen.storyboard */,
+				7D466771202194B600B3473B /* Info.plist */,
+			);
+			path = CZXRefreshExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +174,40 @@
 			productReference = 7D46671B20218F8F00B3473B /* CZXRefresh.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		7D466762202194B600B3473B /* CZXRefreshExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D466774202194B600B3473B /* Build configuration list for PBXNativeTarget "CZXRefreshExample" */;
+			buildPhases = (
+				7D46675F202194B600B3473B /* Sources */,
+				7D466760202194B600B3473B /* Frameworks */,
+				7D466761202194B600B3473B /* Resources */,
+				7D4667B32021A37400B3473B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D4667B22021A37400B3473B /* PBXTargetDependency */,
+			);
+			name = CZXRefreshExample;
+			productName = CZXRefreshExample;
+			productReference = 7D466763202194B600B3473B /* CZXRefreshExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7D46671220218F8F00B3473B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = average;
 				TargetAttributes = {
 					7D46671A20218F8F00B3473B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7D466762202194B600B3473B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -105,6 +219,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7D46671120218F8F00B3473B;
 			productRefGroup = 7D46671C20218F8F00B3473B /* Products */;
@@ -112,6 +227,7 @@
 			projectRoot = "";
 			targets = (
 				7D46671A20218F8F00B3473B /* CZXRefresh */,
+				7D466762202194B600B3473B /* CZXRefreshExample */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +237,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D46673120218FB100B3473B /* CZXRefresh.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D466761202194B600B3473B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D466770202194B600B3473B /* LaunchScreen.storyboard in Resources */,
+				7D46676D202194B600B3473B /* Assets.xcassets in Resources */,
+				7D46676B202194B600B3473B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,10 +258,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4667762021956B00B3473B /* Person.swift in Sources */,
+				7D46672D20218FB100B3473B /* CustomRefreshDelegate.swift in Sources */,
+				7D46672F20218FB100B3473B /* UIScrollView+Refresh.swift in Sources */,
+				7D46673020218FB100B3473B /* RefreshConfigure.swift in Sources */,
+				7D46672E20218FB100B3473B /* RefreshFooterView.swift in Sources */,
+				7D46673220218FB100B3473B /* RefreshHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D46675F202194B600B3473B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D466768202194B600B3473B /* ViewController.swift in Sources */,
+				7D466766202194B600B3473B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D4667B22021A37400B3473B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D46671A20218F8F00B3473B /* CZXRefresh */;
+			targetProxy = 7D4667B12021A37400B3473B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D466769202194B600B3473B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D46676A202194B600B3473B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D46676E202194B600B3473B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D46676F202194B600B3473B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7D46672120218F8F00B3473B /* Debug */ = {
@@ -292,6 +461,38 @@
 			};
 			name = Release;
 		};
+		7D466772202194B600B3473B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VLQ5AZ3L2;
+				INFOPLIST_FILE = CZXRefreshExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.average17.CZXRefreshExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D466773202194B600B3473B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VLQ5AZ3L2;
+				INFOPLIST_FILE = CZXRefreshExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.average17.CZXRefreshExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -309,6 +510,15 @@
 			buildConfigurations = (
 				7D46672420218F8F00B3473B /* Debug */,
 				7D46672520218F8F00B3473B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D466774202194B600B3473B /* Build configuration list for PBXNativeTarget "CZXRefreshExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D466772202194B600B3473B /* Debug */,
+				7D466773202194B600B3473B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
