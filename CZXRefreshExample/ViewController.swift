@@ -19,20 +19,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        let p = Person(name: )
-        
         table = UITableView(frame: self.view.frame)
         table.delegate = self
         table.dataSource = self
         self.view.addSubview(table)
         
-        defaultHeaderHeight = 200
-        
         let header = RefreshHeaderView(type: .default, action: printHelloHeader)
-        header.setText(text: "下下下下下拉刷新", type: .pulling)
         table.czx_headerView = header
-        
-        defaultFooterHeight = 200
         
         let footer = RefreshFooterView(type: .default, action: printHelloFooter)
         footer.setText(text: "都加载完啦", type: .endRefresh)
