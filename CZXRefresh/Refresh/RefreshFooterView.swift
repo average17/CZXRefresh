@@ -214,7 +214,10 @@ extension RefreshFooterView {
         
         let height = defaultFooterPullHeight
         let contentHeight = superView.contentSize.height
-        let adjustBottom = superView.adjustedContentInset.bottom
+        var adjustBottom = superView.contentInset.bottom
+        if #available(iOS 11.0, *) {
+            adjustBottom = superView.adjustedContentInset.bottom
+        }
         let frameHeight = superView.frame.height
         let refreshOffsetY = contentHeight + adjustBottom - frameHeight + height
         if self.canBegin {
