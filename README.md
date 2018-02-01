@@ -209,11 +209,15 @@ footer.setDynamicAnimation { (view) in
 ```
 footer.endView = imageView
 ```
+加载结束的自定义动画不提供
 
 ## 纯用户自定义下拉刷新
 如果你觉得，以上下拉刷新的四种布局你都不喜欢的话，好，咱们来自己定义
 首先，你需要遵循CustomHeaderRefreshDelegate协议，并实现其中的七个方法(四个分别用于设置下拉时的视图、松手开始刷新时的视图、刷新时的视图、刷新完成的视图，三个分别用于设置下拉时的动画、松手开始刷新时的动画、刷新时的动画)
 然后你需要设置刷新时的代理，示例代码如下：
+
+![headerdelegate](https://github.com/average17/CZXRefresh/blob/master/screenshots/header.png)
+
 ```
 let header = RefreshHeaderView(type: .custom, action: headerRefresh)
 tableView.czx_headerView = header
@@ -266,6 +270,9 @@ func setRefreshingAnimation(view: UIView) {
 如果你觉得，以上上拉加载的三种布局你也都不喜欢的话，好，咱们也可以来自己定义
 首先，你需要遵循CustomFooterRefreshDelegate协议，并实现其中的五个方法(三个分别用于设置上拉时的视图、加载时的视图、加载完成的视图，两个分别用于设置上拉时的动画、加载时的动画)
 然后你需要设置加载时的代理，示例代码如下：
+
+![footerdelegate](https://github.com/average17/CZXRefresh/blob/master/screenshots/footer.png)
+
 ```
 let footer = RefreshFooterView(type: .custom, action: footerRefresh)
 tableView.czx_footerView = footer
