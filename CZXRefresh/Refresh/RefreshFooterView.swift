@@ -200,10 +200,8 @@ public final class RefreshFooterView: UIView {
     public func setPullingAnimation(_ animation: @escaping (UIView, CGFloat) -> ()) {
         self.pullingAnimation = animation
     }
-}
 
-// MARK: - 扩展刷新相关
-extension RefreshFooterView {
+    // MARK: - 扩展刷新相关
     /// 上拉加载
     ///
     /// - Parameter y: 偏移距离
@@ -325,10 +323,8 @@ extension RefreshFooterView {
             self.setDisplay(state: .endRefresh)
         }
     }
-}
 
-// MARK: - 扩展布局相关
-extension RefreshFooterView {
+    // MARK: - 扩展布局相关
     /// 设置自定义样式的布局
     private func setCustomDisplay() {
         self.normalView = delegate?.setNormalView()
@@ -432,10 +428,8 @@ extension RefreshFooterView {
             self.endText = text
         }
     }
-}
 
-// MARK: - 扩展加载时的布局
-extension RefreshFooterView {
+    // MARK: - 扩展加载时的布局
     /// 根据状态设置相应的布局
     ///
     /// - Parameter state: 加载视图的状态

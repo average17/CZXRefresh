@@ -214,10 +214,8 @@ public final class RefreshHeaderView: UIView {
     public func setRefreshingAnimation(animation: @escaping (UIView) -> ()) {
         self.refreshingAnimation = animation
     }
-}
 
-// MARK: - 扩展刷新相关
-extension RefreshHeaderView {
+    // MARK: - 扩展刷新相关
     /// 下拉刷新
     ///
     /// - Parameter y: 偏移距离
@@ -352,10 +350,8 @@ extension RefreshHeaderView {
             self.setDisplay(state: .refreshed)
         }
     }
-}
-
-// MARK: - 扩展布局相关
-extension RefreshHeaderView {
+    
+    // MARK: - 扩展布局相关
     /// 设置默认样式的布局(有图片、提示文本和刷新时间)
     private func setDefaultDisplay() {
         let viewHeight = defaultHeaderPullHeight - 20
@@ -364,8 +360,7 @@ extension RefreshHeaderView {
         if defaultHeaderHeight > defaultHeaderPullHeight {
             y = defaultHeaderHeight - defaultHeaderPullHeight
         }
-        print(y)
-        print(viewHeight)
+        
         let imageRect = CGRect(x: width-viewHeight-50, y: y + 10, width: viewHeight, height: viewHeight)
         self.addImage(rect: imageRect)
         
@@ -509,10 +504,8 @@ extension RefreshHeaderView {
             self.refreshedText = text
         }
     }
-}
 
-// MARK: - 扩展刷新时的布局
-extension RefreshHeaderView {
+    // MARK: - 扩展刷新时的布局
     /// 根据状态设置相应的布局
     ///
     /// - Parameter state: 刷新视图的状态
