@@ -70,13 +70,13 @@ public enum RefreshFooterViewState {
 /// 默认刷新视图宽度
 public var windowWidth = UIScreen.main.bounds.width
 /// 默认下拉刷新视图高度
-public var defaultHeaderHeight: CGFloat = 70
+public var defaultHeaderHeight: CGFloat = 50
 /// 默认上拉加载视图高度
-public var defaultFooterHeight: CGFloat = 70
+public var defaultFooterHeight: CGFloat = 50
 /// 默认下拉刷新视图下拉高度
-public var defaultHeaderPullHeight: CGFloat = 70
+public var defaultHeaderPullHeight: CGFloat = 50
 /// 默认上拉加载视图上拉高度
-public var defaultFooterPullHeight: CGFloat = 70
+public var defaultFooterPullHeight: CGFloat = 50
 
 /// 下拉刷新视图标签
 var headerTag = 1996

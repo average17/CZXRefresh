@@ -358,12 +358,14 @@ extension RefreshHeaderView {
 extension RefreshHeaderView {
     /// 设置默认样式的布局(有图片、提示文本和刷新时间)
     private func setDefaultDisplay() {
-        let viewHeight = defaultFooterPullHeight - 20
+        let viewHeight = defaultHeaderPullHeight - 20
         let width = windowWidth / 2
         var y: CGFloat = 0
         if defaultHeaderHeight > defaultHeaderPullHeight {
             y = defaultHeaderHeight - defaultHeaderPullHeight
         }
+        print(y)
+        print(viewHeight)
         let imageRect = CGRect(x: width-viewHeight-50, y: y + 10, width: viewHeight, height: viewHeight)
         self.addImage(rect: imageRect)
         
@@ -382,7 +384,7 @@ extension RefreshHeaderView {
     
     /// 设置有图片和提示文本的布局
     private func setImageAndTextDisplay() {
-        let viewHeight = defaultFooterPullHeight - 20
+        let viewHeight = defaultHeaderPullHeight - 20
         let width = windowWidth / 2
         var y: CGFloat = 0
         if defaultHeaderHeight > defaultHeaderPullHeight {
@@ -391,13 +393,13 @@ extension RefreshHeaderView {
         let imageRect = CGRect(x: width-viewHeight-10, y: y + 10, width: viewHeight, height: viewHeight)
         self.addImage(rect: imageRect)
         
-        let labelRect = CGRect(x: width, y: y, width: width, height: defaultFooterPullHeight)
+        let labelRect = CGRect(x: width, y: y, width: width, height: defaultHeaderPullHeight)
         self.addText(rect: labelRect)
     }
     
     /// 设置只有图片的布局
     private func setImageDisplay() {
-        let viewHeight = defaultFooterPullHeight - 20
+        let viewHeight = defaultHeaderPullHeight - 20
         let x = (windowWidth - viewHeight) / 2
         var y: CGFloat = 0
         if defaultHeaderHeight > defaultHeaderPullHeight {

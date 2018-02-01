@@ -56,7 +56,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print("-------------------------加载完成 footer")
                 self?.cellCount += 20
                 self?.table.reloadData()
-                if self!.cellCount <= 60 {
+                if self!.cellCount < 40 {
                     self?.table.czx_footerView?.stopRefresh()
                 } else {
                     print("-------------------------加载完所有数据 footer")

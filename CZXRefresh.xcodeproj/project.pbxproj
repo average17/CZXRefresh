@@ -19,7 +19,6 @@
 		7D46676B202194B600B3473B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D466769202194B600B3473B /* Main.storyboard */; };
 		7D46676D202194B600B3473B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D46676C202194B600B3473B /* Assets.xcassets */; };
 		7D466770202194B600B3473B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D46676E202194B600B3473B /* LaunchScreen.storyboard */; };
-		7D4667762021956B00B3473B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4667752021956B00B3473B /* Person.swift */; };
 		7D4667AF2021A37400B3473B /* CZXRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D46671B20218F8F00B3473B /* CZXRefresh.framework */; };
 		7D4667B02021A37400B3473B /* CZXRefresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D46671B20218F8F00B3473B /* CZXRefresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -65,7 +64,6 @@
 		7D46676C202194B600B3473B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D46676F202194B600B3473B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D466771202194B600B3473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D4667752021956B00B3473B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 				7D46672620218FB100B3473B /* Refresh */,
 				7D46671E20218F8F00B3473B /* CZXRefresh.h */,
 				7D46671F20218F8F00B3473B /* Info.plist */,
-				7D4667752021956B00B3473B /* Person.swift */,
 			);
 			path = CZXRefresh;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4667762021956B00B3473B /* Person.swift in Sources */,
 				7D46672D20218FB100B3473B /* CustomRefreshDelegate.swift in Sources */,
 				7D46672F20218FB100B3473B /* UIScrollView+Refresh.swift in Sources */,
 				7D46673020218FB100B3473B /* RefreshConfigure.swift in Sources */,
