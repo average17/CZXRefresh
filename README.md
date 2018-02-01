@@ -17,4 +17,7 @@
 
 ![手动第三步](https://github.com/average17/CZXRefresh/blob/master/screenshots/manual_3.png)
 
-
+在需要使用的文件中import框架即可使用
+```
+import CZXRefresh
+```
