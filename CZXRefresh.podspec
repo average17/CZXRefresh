@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CZXRefresh"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "CZXRefresh can make UITableView and UICollectionView refesh or add more easier"
   s.description  = <<-DESC
                     CZXRefresh is easy to refresh UITableVie and UICollectionView.And now, enjoy it.
