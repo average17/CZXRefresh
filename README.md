@@ -7,7 +7,7 @@
 
 
 ### 也可以下载之后手动导入
-先把.xcodeproj文件拖到项目下
+先把CZXRefresh.xcodeproj文件拖到项目下
 
 ![手动第一步](https://github.com/average17/CZXRefresh/blob/master/screenshots/manual_1.png)
 
