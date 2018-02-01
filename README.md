@@ -64,6 +64,53 @@ func headerRefresh() {
 }
 ```
 
+## 刷新完成、加载完成和加载完所有数据
+当我们刷新的数据请求到之后，或者加载的数据加载完之后，我们需要调用相应的方法来收起刷新或暂停加载
+```
+self?.tableView.czx_headerView?.stopRefresh()  //刷新完成
+
+self?.tableView.czx_footerView?.stopRefresh()  //加载完成
+self?.tableView.czx_footerView?.endRefresh()  //加载完所有数据
+```
+使用示例如下：
+```
+func headerRefresh() {
+    DispatchQueue.global().async {
+        print("-------------------------正在刷新 header")
+        sleep(2)
+        DispatchQueue.main.async {
+            [weak self] in
+            print("-------------------------刷新完成 header")
+            self?.cellCount = 20
+            self?.cellName = "刷新"
+            self?.tableView.reloadData()
+            self?.tableView.czx_headerView?.stopRefresh()
+        }
+    }
+}
+
+...
+
+func footerRefresh() {
+    DispatchQueue.global().async {
+        print("-------------------------正在加载 footer")
+        sleep(2)
+        DispatchQueue.main.async {
+            [weak self] in
+            print("-------------------------加载完成 footer")
+            self?.cellCount += 20
+            self?.tableView.reloadData()
+            if self!.cellCount <= 40 {
+                self?.tableView.czx_footerView?.stopRefresh()
+            } else {
+                print("-------------------------加载完所有数据 footer")
+                self?.tableView.czx_footerView?.endRefresh()
+            }
+        }
+    }
+}
+```
+
 ## 下拉刷新视图的几种类型
 default类型(包含图片和文字，还有刷新时间)
 
