@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CZXRefresh"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "CZXRefresh can make UITableView and UICollectionView refesh or add more easier"
   s.description  = <<-DESC
                     CZXRefresh is easy to refresh UITableVie and UICollectionView.And now, enjoy it.
@@ -12,4 +12,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/average17/CZXRefresh.git", :tag => "#{s.version}" }
   s.source_files  = "CZXRefresh/Refresh/*{swift}"
   s.requires_arc = true
+  s.resource_bundle = {
+    'CZXRefresh' => ['CZXRefresh/Refresh/CZXRefresh.bundle/*.png']
+}
 end
