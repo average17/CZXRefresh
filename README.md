@@ -135,7 +135,8 @@ footer.isAutoOpacity = false
 
 ## 设置是否自动刷新
 header的该属性默认为false，也就是拖拽过程中有一个状态是提示松手开始刷新，如果设置为true，当拖拽到一定距离之后就直接开始刷新了
-footer的该属性默认为true，也就是拖拽到一定距离直接开始刷新，如果设置为false，则加载视图会停留在底部，你可以点击刷新或者上拉刷新
+
+footer的该属性默认为true，也就是拖拽到一定距离直接开始刷新，如果设置为false，则加载视图会停留在底部，你可以点击加载或者上拉加载
 ```
 header.isAutoRefresh = true
 footer.isAutoRefresh = false
@@ -148,6 +149,7 @@ let imageView = UIImageView(image: UIImage(named: "11"))
 header.normalView = imageView
 ```
 此处normalView为UIView类型
+
 同时也可以自己定义下拉时的动画
 ```
 header.setpullingAnimation { (view, percent) in
@@ -213,7 +215,9 @@ footer.endView = imageView
 
 ## 纯用户自定义下拉刷新
 如果你觉得，以上下拉刷新的四种布局你都不喜欢的话，好，咱们来自己定义
+
 首先，你需要遵循CustomHeaderRefreshDelegate协议，并实现其中的七个方法(四个分别用于设置下拉时的视图、松手开始刷新时的视图、刷新时的视图、刷新完成的视图，三个分别用于设置下拉时的动画、松手开始刷新时的动画、刷新时的动画)
+
 然后你需要设置刷新时的代理，示例代码如下：
 
 ![headerdelegate](https://github.com/average17/CZXRefresh/blob/master/screenshots/header.png)
@@ -268,7 +272,9 @@ func setRefreshingAnimation(view: UIView) {
 
 ## 纯用户自定义上拉加载
 如果你觉得，以上上拉加载的三种布局你也都不喜欢的话，好，咱们也可以来自己定义
+
 首先，你需要遵循CustomFooterRefreshDelegate协议，并实现其中的五个方法(三个分别用于设置上拉时的视图、加载时的视图、加载完成的视图，两个分别用于设置上拉时的动画、加载时的动画)
+
 然后你需要设置加载时的代理，示例代码如下：
 
 ![footerdelegate](https://github.com/average17/CZXRefresh/blob/master/screenshots/footer.png)
