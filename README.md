@@ -19,14 +19,15 @@
 
 ![手动第三步](https://github.com/average17/CZXRefresh/blob/master/screenshots/manual_3.png)
 
+---------------------------------------------------
+
+# 使用方法
 在需要使用的文件中import框架即可使用
 ```
 import CZXRefresh
 ```
 
-# 使用方法
-
-下拉刷新和上拉加载都可以在UITableView和UICollectionView中使用，一下以UITableView为例，UICollection用法相同。
+下拉刷新和上拉加载都可以在UITableView和UICollectionView中使用，以下以UITableView为例，UICollection用法相同。
 
 ## 添加默认的下拉刷新
 ```
