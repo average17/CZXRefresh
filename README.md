@@ -126,7 +126,7 @@ footer.backgroundView = imageView2 //自定义背景视图
 tableView.czx_footerView = footer
 ```
 
-## 设置拖抓过程中是否自动改变透明度
+## 设置拖拽过程中是否自动改变透明度
 默认都为true，也就是拖拽过程中随着拖拽距离的增加，透明度降低；如果为false，当开始拖拽时就是不透明的。
 ```
 header.isAutoOpacity = true
@@ -210,4 +210,94 @@ footer.setDynamicAnimation { (view) in
 footer.endView = imageView
 ```
 
+## 纯用户自定义下拉刷新
+如果你觉得，以上下拉刷新的四种布局你都不喜欢的话，好，咱们来自己定义
+首先，你需要遵循CustomHeaderRefreshDelegate协议，并实现其中的七个方法(四个分别用于设置下拉时的视图、松手开始刷新时的视图、刷新时的视图、刷新完成的视图，三个分别用于设置下拉时的动画、松手开始刷新时的动画、刷新时的动画)
+然后你需要设置刷新时的代理，示例代码如下：
+```
+let header = RefreshHeaderView(type: .custom, action: headerRefresh)
+tableView.czx_headerView = header
+tableView.czx_headerView?.delegate = self  //也可以使用header.delegate = self
 
+......
+
+func setNormalView() -> UIView {
+    let image = UIImage(named: "1")
+    let imageView = UIImageView(image: image!)
+    return imageView
+}
+
+func setReleaseToRefreshView() -> UIView {
+    let image = UIImage(named: "2")
+    let imageView = UIImageView(image: image!)
+    return imageView
+}
+
+func setRefreshingView() -> UIView {
+    let image = UIImage(named: "3")
+    let imageView = UIImageView(image: image!)
+    return imageView
+}
+
+func setRefreshedView() -> UIView {
+    let image = UIImage(named: "22")
+    let imageView = UIImageView(image: image!)
+    return imageView
+}
+
+func setPullingAnimation(view: UIView, percent: CGFloat) {
+    view.alpha = percent
+}
+
+func setReleaseToRefreshAnimation(view: UIView) {
+    UIView.animate(withDuration: 0.3) {
+        view.transform = view.transform.rotated(by: CGFloat.pi)
+    }
+}
+
+func setRefreshingAnimation(view: UIView) {
+    UIView.animate(withDuration: 0.2, delay: 0, options: [.repeat, .autoreverse], animations: {
+        view.alpha = 0.2
+    }, completion: nil)
+}
+```
+
+## 纯用户自定义上拉加载
+如果你觉得，以上上拉加载的三种布局你也都不喜欢的话，好，咱们也可以来自己定义
+首先，你需要遵循CustomFooterRefreshDelegate协议，并实现其中的五个方法(三个分别用于设置上拉时的视图、加载时的视图、加载完成的视图，两个分别用于设置上拉时的动画、加载时的动画)
+然后你需要设置加载时的代理，示例代码如下：
+```
+let footer = RefreshFooterView(type: .custom, action: footerRefresh)
+tableView.czx_footerView = footer
+tableView.czx_footerView?.delegate = self  //也可以使用footer.delegate = self
+
+......
+
+func setNormalView() -> UIView {
+    let image = UIImage(named: "1")
+    let imageView = UIImageView(image: image!)
+    return imageView
+}
+
+func setRefreshingView() -> UIView {
+    let image = UIImage(named: "2")
+    let imageView = UIImageView(image: image!)
+    return imageView
+}
+
+func setEndRefreshView() -> UIView {
+    let image = UIImage(named: "3")
+    let imageView = UIImageView(image: image!)
+    return imageView
+}
+
+func setPullingAnimation(view: UIView, percent: CGFloat) {
+    view.alpha = percent
+}
+
+func setRefreshingAnimation(view: UIView) {
+    UIView.animate(withDuration: 0.2, delay: 0, options: [.repeat, .autoreverse], animations: {
+        view.alpha = 0.2
+    }, completion: nil)
+}
+```
