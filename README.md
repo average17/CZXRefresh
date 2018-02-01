@@ -77,6 +77,7 @@ image类型(只有图片)
 ![header_image](https://github.com/average17/CZXRefresh/blob/master/screenshots/header_image.png)
 
 text类型(只有文字)
+
 ![header_text](https://github.com/average17/CZXRefresh/blob/master/screenshots/header_text.png)
 
 custom类型(用户自定义)
@@ -139,3 +140,14 @@ footer的该属性默认为true，也就是拖拽到一定距离直接开始刷�
 header.isAutoRefresh = true
 footer.isAutoRefresh = false
 ```
+
+## 自定义下拉时图片位置的视图
+为方便自定义，这里没有规定有图片的类型图片处必须使用UIImageView，只要是UIView都可以
+```
+let imageView = UIImageView(image: UIImage(named: "11"))
+header.normalView = imageView
+```
+此处normalView为UIView类型
+同时也可以自己定义
+
+
