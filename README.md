@@ -148,6 +148,66 @@ let imageView = UIImageView(image: UIImage(named: "11"))
 header.normalView = imageView
 ```
 此处normalView为UIView类型
-同时也可以自己定义
+同时也可以自己定义下拉时的动画
+```
+header.setpullingAnimation { (view, percent) in
+    view.alpha = percent
+}
+```
+此处设置动画时需要传入一个参数为UIView和CGFloat的闭包，此处的view为刚刚设置的视图，percent为下拉的距离与拖拽高度的百分比。
+
+## 自定义松手开始刷新时图片位置的视图
+定义方法类似以上定义下拉时的视图和动画，就直接贴代码了
+```
+header.releaseToRefreshView = imageView
+header.setReleaseToRefreshAnimation { (view) in
+    UIView.animate(withDuration: 0.5, animations: {
+        view.alpha = 0.2
+    })
+}
+```
+
+## 自定义刷新时图片位置的视图
+定义方式也同样类似
+```
+header.refreshingView = imageView
+header.setRefreshingAnimation { (view) in
+    UIView.animate(withDuration: 0.3, delay: 0, options: [.repeat, .autoreverse], animations: {
+        view.alpha = 0.2
+    }, completion: nil)
+}
+```
+
+## 自定义刷新完成时的图片位置的视图
+```
+header.refreshedView = imageView
+```
+刷新完成时不提供自定义动画
+
+## 自定义上拉时图片位置的视图
+上拉加载自定义图片位置的视图也可以像下拉刷新那样自定哦
+```
+let imageView = UIImageView(image: UIImage(named: "11"))
+footer.staticView = imageView
+footer.setPullingAnimation { (view, percent) in
+    view.alpha = percent
+}
+```
+view为添加的自定义上拉时的视图，percent为上拉的距离与上拉加载高度的百分比
+
+## 自定义加载时图片位置的视图
+```
+footer.dynamicView = imageView
+footer.setDynamicAnimation { (view) in
+    UIView.animate(withDuration: 0.3, delay: 0, options: [.repeat, .autoreverse], animations: {
+        view.alpha = 0.2
+    }, completion: nil)
+}
+```
+
+## 自定义数据加载完时图片位置的视图
+```
+footer.endView = imageView
+```
 
 
