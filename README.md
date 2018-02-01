@@ -64,8 +64,38 @@ func headerRefresh() {
 ```
 
 ## 下拉刷新视图的几种类型
+default类型(包含图片和文字，还有刷新时间)
+
+![header_default](https://github.com/average17/CZXRefresh/blob/master/screenshots/header_default.png)
+
+imageAndText类型(包含图片和文字)
+
+![header_imageAndText](https://github.com/average17/CZXRefresh/blob/master/screenshots/header_imageAndText.png)
+
+image类型(只有图片)
+
+![header_image](https://github.com/average17/CZXRefresh/blob/master/screenshots/header_image.png)
+
+text类型(只有文字)
+![header_text](https://github.com/average17/CZXRefresh/blob/master/screenshots/header_text.png)
+
+custom类型(用户自定义)
 
 ## 上拉加载视图的几种类型
+default类型(包含图片和文字)
+
+![footer_default](https://github.com/average17/CZXRefresh/blob/master/screenshots/footer_default.png)
+
+image类型(只包含图片)
+
+![footer_image](https://github.com/average17/CZXRefresh/blob/master/screenshots/footer_image.png)
+
+text类型(只包含文字)
+
+![footer_text](https://github.com/average17/CZXRefresh/blob/master/screenshots/footer_text.png)
+
+custom类型(用户自定义)
+
 
 ## 设置刷新视图高度和拖拽高度
 默认的刷新视图和拖拽的距离是50，如果觉得不够的话，可以自己设置(需要在刷新视图或加载视图初始化之前设置)
