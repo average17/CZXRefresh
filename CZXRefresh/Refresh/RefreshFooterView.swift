@@ -12,21 +12,21 @@ public final class RefreshFooterView: UIView {
 
     // MARK: private property
     /// 父滚动视图
-    fileprivate var superScrollView: UIScrollView?
+    private var superScrollView: UIScrollView?
     /// 视图类型
-    fileprivate var viewType: RefreshFooterViewType = .default
+    private var viewType: RefreshFooterViewType = .default
     /// 文本提示
-    fileprivate var textLabel: UILabel = UILabel()
-    fileprivate var normalText: String = "上拉加载"
-    fileprivate var refreshingText: String = "正在加载..."
-    fileprivate var endText: String = "所有数据已经加载完成"
+    private var textLabel: UILabel = UILabel()
+    private var normalText: String = "上拉加载"
+    private var refreshingText: String = "正在加载..."
+    private var endText: String = "所有数据已经加载完成"
     /// 动态提示
-    fileprivate var hintView: UIView = UIView()
-    fileprivate var staticImageView: UIImageView = UIImageView()
-    fileprivate var dynamicImageView: UIImageView = UIImageView()
-    fileprivate var endImageView: UIImageView = UIImageView()
+    private var hintView: UIView = UIView()
+    private var staticImageView: UIImageView = UIImageView()
+    private var dynamicImageView: UIImageView = UIImageView()
+    private var endImageView: UIImageView = UIImageView()
     /// 上拉的百分比
-    fileprivate var alphaPercent: CGFloat = 0
+    private var alphaPercent: CGFloat = 0
     
     // MARK: public property
     /// 能否加载
@@ -90,9 +90,9 @@ public final class RefreshFooterView: UIView {
         }
     }
     /// 可自定义加载状态时的动画
-    fileprivate var dynamicAnimation: ((UIView) -> ())?
+    private var dynamicAnimation: ((UIView) -> ())?
     /// 可自定义上拉状态时的动画
-    fileprivate var pullingAnimation: ((UIView, CGFloat) -> ())?
+    private var pullingAnimation: ((UIView, CGFloat) -> ())?
     /// 可自定义加载完成时的动画
     public var endView: UIView? {
         didSet{
@@ -104,9 +104,9 @@ public final class RefreshFooterView: UIView {
     }
     
     // MARK: 完全自定义的上拉加载
-    fileprivate var normalView: UIView?
-    fileprivate var refreshingView: UIView?
-    fileprivate var endRefreshView: UIView?
+    private var normalView: UIView?
+    private var refreshingView: UIView?
+    private var endRefreshView: UIView?
     /// 自定义的加载视图代理
     public var delegate: CustomFooterRefreshDelegate? {
         didSet {

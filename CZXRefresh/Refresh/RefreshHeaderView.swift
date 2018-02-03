@@ -12,32 +12,32 @@ public final class RefreshHeaderView: UIView {
 
     // MARK: private property
     /// 能否刷新
-    fileprivate var canBegin = true
+    private var canBegin = true
     /// isFirst和isSecond用于获取初始偏移量
-    fileprivate var isFirst: Bool = true
-    fileprivate var isSecond: Bool = true
+    private var isFirst: Bool = true
+    private var isSecond: Bool = true
     /// 初始偏移量
-    fileprivate var initOffsetY: CGFloat = CGFloat()
+    private var initOffsetY: CGFloat = CGFloat()
     /// 父滚动视图
-    fileprivate var superScrollView: UIScrollView?
+    private var superScrollView: UIScrollView?
     /// 文本提示
-    fileprivate var textLabel: UILabel = UILabel()
-    fileprivate var normalText: String = "下拉刷新"
-    fileprivate var releaseToRefreshText: String = "松手开始刷新"
-    fileprivate var refreshingText: String = "正在刷新..."
-    fileprivate var refreshedText: String = "刷新完成"
-    fileprivate var timeLabel: UILabel = UILabel()
-    fileprivate var timeString: String = ""
+    private var textLabel: UILabel = UILabel()
+    private var normalText: String = "下拉刷新"
+    private var releaseToRefreshText: String = "松手开始刷新"
+    private var refreshingText: String = "正在刷新..."
+    private var refreshedText: String = "刷新完成"
+    private var timeLabel: UILabel = UILabel()
+    private var timeString: String = ""
     /// 动态提示
-    fileprivate var hintView: UIView = UIView()
-    fileprivate var normalImageView: UIImageView = UIImageView()
-    fileprivate var releaseToRefreshImageView: UIImageView = UIImageView()
-    fileprivate var refreshingImageView: UIImageView = UIImageView()
-    fileprivate var refreshedImageView: UIImageView = UIImageView()
+    private var hintView: UIView = UIView()
+    private var normalImageView: UIImageView = UIImageView()
+    private var releaseToRefreshImageView: UIImageView = UIImageView()
+    private var refreshingImageView: UIImageView = UIImageView()
+    private var refreshedImageView: UIImageView = UIImageView()
     /// 视图类型
-    fileprivate var viewType: RefreshHeaderViewType = .default
+    private var viewType: RefreshHeaderViewType = .default
     /// 上拉的百分比
-    fileprivate var alphaPercent: CGFloat = 0
+    private var alphaPercent: CGFloat = 0
     
     // MARK: public property
     /// 刷新功能
@@ -112,17 +112,17 @@ public final class RefreshHeaderView: UIView {
         }
     }
     /// 可自定义下拉时的动画
-    fileprivate var pullingAnimation: ((UIView, CGFloat) -> ())?
+    private var pullingAnimation: ((UIView, CGFloat) -> ())?
     /// 可自定义松手开始刷新时的动画
-    fileprivate var releaseToRefreshAnimation: ((UIView) -> ())?
+    private var releaseToRefreshAnimation: ((UIView) -> ())?
     /// 可自定义刷新时的动画
-    fileprivate var refreshingAnimation: ((UIView) -> ())?
+    private var refreshingAnimation: ((UIView) -> ())?
     
     // MARK: 完全自定义的上拉加载
-    fileprivate var customNormalView: UIView?
-    fileprivate var customReleaseToRefreshView: UIView?
-    fileprivate var customRefreshingView: UIView?
-    fileprivate var customRefreshedView: UIView?
+    private var customNormalView: UIView?
+    private var customReleaseToRefreshView: UIView?
+    private var customRefreshingView: UIView?
+    private var customRefreshedView: UIView?
     /// 自定义的加载视图代理
     public var delegate: CustomHeaderRefreshDelegate? {
         didSet {
