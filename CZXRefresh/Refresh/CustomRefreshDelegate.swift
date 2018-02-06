@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// 自定义下拉刷新代理
 public protocol CustomHeaderRefreshDelegate {
     
     /// 自定义正常状态时的视图
@@ -48,6 +49,7 @@ public protocol CustomHeaderRefreshDelegate {
     func setRefreshingAnimation(view: UIView)
 }
 
+/// 自定义上拉加载代理
 public protocol CustomFooterRefreshDelegate {
     
     /// 自定义正常状态时的视图

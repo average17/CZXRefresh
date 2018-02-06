@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - 扩展UIScrollView，增加下拉刷新和上拉加载
 extension UIScrollView {
     
     /// 下拉刷新手势
@@ -94,6 +95,7 @@ extension UIScrollView {
     }
 }
 
+// MARK: - 扩展UIScrollView，取消手势冲突
 extension UIScrollView: UIGestureRecognizerDelegate {
     
     /// 设置手势冲突

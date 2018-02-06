@@ -16,10 +16,15 @@ import UIKit
 /// - text: 只有文本
 /// - custom: 自定义类型
 public enum RefreshHeaderViewType {
+    /// 默认类型(包含一张图片，文本提示和上次刷新时间)
     case `default`
+    /// 有图片和文本的类型
     case imageAndText
+    /// 只有图片
     case image
+    /// 只有文本
     case text
+    /// 自定义类型
     case custom
 }
 
@@ -30,9 +35,13 @@ public enum RefreshHeaderViewType {
 /// - image: 只有图片
 /// - custom: 自定义类型
 public enum RefreshFooterViewType {
+    /// 默认类型(包含一张图片和文本提示)
     case `default`
+    /// 只有文本
     case text
+    /// 只有图片
     case image
+    /// 自定义类型
     case custom
 }
 

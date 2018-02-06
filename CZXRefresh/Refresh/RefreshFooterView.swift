@@ -122,6 +122,11 @@ public final class RefreshFooterView: UIView {
         setup()
     }
     
+    /// 初始化方法
+    ///
+    /// - Parameters:
+    ///   - type: 上拉加载类型
+    ///   - action: 加载的动作
     public init(type: RefreshFooterViewType, action: @escaping () -> ()) {
         super.init(frame: CGRect(x: 0, y: 0, width: windowWidth, height: defaultFooterHeight))
         self.action = action
@@ -130,6 +135,9 @@ public final class RefreshFooterView: UIView {
         setup()
     }
     
+    /// 初始化方法
+    ///
+    /// - Parameter action: 加载的动作
     public init(action: @escaping () -> ()) {
         super.init(frame: CGRect(x: 0, y: 0, width: windowWidth, height: defaultFooterHeight))
         self.action = action

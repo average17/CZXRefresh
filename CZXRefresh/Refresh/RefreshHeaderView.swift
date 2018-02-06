@@ -137,6 +137,11 @@ public final class RefreshHeaderView: UIView {
         setup()
     }
     
+    /// 初始化方法
+    ///
+    /// - Parameters:
+    ///   - type: 下拉刷新类型
+    ///   - action: 刷新的动作
     public init(type: RefreshHeaderViewType, action: @escaping () -> ()) {
         super.init(frame: CGRect(x: 0, y: 0, width: windowWidth, height: defaultHeaderHeight))
         self.action = action
@@ -145,6 +150,9 @@ public final class RefreshHeaderView: UIView {
         setup()
     }
     
+    /// 初始化方法
+    ///
+    /// - Parameter action: 刷新的动作
     public init(action: @escaping () -> ()) {
         super.init(frame: CGRect(x: 0, y: 0, width: windowWidth, height: defaultHeaderHeight))
         self.action = action
