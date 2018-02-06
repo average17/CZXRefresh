@@ -1,5 +1,7 @@
 # CZXRefresh
 
+CZXRefresh可以很方便地给UITableView和UICollectionView添加下拉刷新和上拉加载功能，而且刷新视图和加载视图既有系统定义样式也可自定义样式，甚至你可以完全改变它的布局来自定义你自己喜欢的刷新视图或加载视图。
+
 [github项目地址](https://github.com/average17/CZXRefresh)
 
 ### 可以cocoapod导入
